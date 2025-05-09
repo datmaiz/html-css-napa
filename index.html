@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./stylesheets/main.scss">
+	<title>HTML CSS CHALLENGE</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Header -->
+		<header class="container__inner header">
+			<div class="header__logo">trakor</div>
+
+			<!-- navigation -->
+			<nav class="header__navigation">
+				<ul class="header__navigation-list">
+					<li class="header__navigation-item">
+						<a href="javascript:void(0)" class="header__navigation-link button--M">Product</a>
+					</li>
+					<li class="header__navigation-item">
+						<a href="javascript:void(0)" class="header__navigation-link button--M">Solutions</a>
+					</li>
+					<li class="header__navigation-item">
+						<a href="javascript:void(0)" class="header__navigation-link button--M">Documentation</a>
+					</li>
+					<li class="header__navigation-item">
+						<a href="javascript:void(0)" class="header__navigation-link button--M">Pricing</a>
+					</li>
+				</ul>
+				</ul>
+			</nav>
+
+			<!-- header actions -->
+			<div class="header__actions">
+				<a href="javascript:void(0)" class="button button--M">Login</a>
+				<button class="button button--secondary button--M button--request">Request more info</button>
+			</div>
+
+			<!-- Menu -->
+			 <span class="menu__button">
+				<img src="./assets/icons/menu.svg" alt="Menu icon">
+			 </span>
+		</header>
+
+		<!-- Tracking section -->
+		<section class="tracking container__inner">
+			<p class="tracking__caption">Team Progress Tracking Tool</p>
+			<h1 class="tracking__headline heading--M">Track your team progress</h1>
+			<p class="tracking__paragraph body--L">Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh ornare
+				viverra.
+				Ultrices faucibus neque velit risus ac id lorem.</p>
+			<div class="tracking__actions">
+				<button class="button button--primary button--L tracking__actions--button"><span>Start for free</span></button>
+				<button class="button button--secondary button--L tracking__actions--button">
+					<span>Request more info</span>
+				</button>
+			</div>
+
+			<!-- Image -->
+			<picture>
+				<source media="(max-width: 576px)" srcset="./assets/images/mobile/team-progress-icon.png" />
+				<img src="./assets/images/desktop/team-progress-icon.png" alt="Logo" class="tracking__image" />
+			</picture>
+		</section>
+
+		<!-- Companies section -->
+		<section class="companies container__inner">
+			<p class="companies__headline heading--6">Trusted by teams from leading companies</p>
+			<div class="companies__logos">
+				<div class="companies__logo">
+					<img src="./assets//icons/smart-finder.svg" alt="Smart Finder Logo" class="companies__logo--image heading--6">
+					<span class="companies__logo--text">SmartFinder</span>
+				</div>
+				<div class="companies__logo">
+					<img src="./assets//icons/zoomerr.svg" alt="Zoomerr Logo" class="companies__logo--image heading--6">
+					<span class="companies__logo--text">Zoomerr</span>
+				</div>
+				<div class="companies__logo">
+					<img src="./assets//icons/shells.svg" alt="Shells Logo" class="companies__logo--image heading--6">
+					<span class="companies__logo--text">Shells</span>
+				</div>
+				<div class="companies__logo">
+					<img src="./assets//icons/waves.svg" alt="Waves Logo" class="companies__logo--image heading--6">
+					<span class="companies__logo--text">Waves</span>
+				</div>
+				<div class="companies__logo">
+					<img src="./assets//icons/art-venue.svg" alt="Art Venue Logo" class="companies__logo--image heading--6">
+					<span class="companies__logo--text">Artenue</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Team section -->
+		<section class="team container__inner">
+			<h2 class="team__headline heading--2">Your team. Your projects.</h2>
+			<h2 class="team__headline--secondary heading--2">Always together.</h2>
+			<p class="team__paragraph body--L">Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.</p>
+		</section>
+
+		<!-- Benefits section -->
+		<section class="benefits container__inner">
+			<div class="benefits--left">
+				<h2 class="benefits__headline heading--3">Bigger team.</h2>
+				<h2 class="benefits__headline--secondary heading--3">More time.</h2>
+				<p class="benefits__paragraph benefits__paragraph--desktop body--L">Quam quis orci turpis vulputate platea. Urna ipsum suscipit nullam ipsum
+					nam leo
+					fringilla eget lorem. Sit vestibulum
+					phasellus integer et et diam malesuada. Sed tortor orci mauris proin ac. Venenatis euismod mauris quis sit
+					purus nisi.
+					Sed quis eget augue ut aliquam sed.</p>
+					<p class="benefits__paragraph benefits__paragraph--mobile body--L">Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.</p>
+			</div>
+			<div class="benefits--right">
+				<picture>
+					<source media="(max-width: 576px)" srcset="./assets/images/mobile/benefits.png" />
+					<img src="./assets/images/desktop/benefits.png" alt="Benefits images" class="benefits__image" />
+				</picture>
+			</div>
+		</section>
+
+		<!-- Banner section -->
+		<section class="banner container__inner">
+			<h2 class="banner__headline">Diam quam tortor eget id.
+				Aliquet lacus volutpat tristique sed diam.</h2>
+			<div class="banner__image">
+				<picture>
+					<source srcset="./assets/images/mobile/desktop.png" media="(max-width: 576px)">
+					<img src="./assets/images/desktop/desktop.png" alt="Banner image" class="">
+				</picture>
+			</div>
+		</section>
+
+		<!-- Tool section -->
+		<section class="tool container__inner">
+			<div class="tool--left">
+				<picture>
+					<source srcset="./assets/images/mobile/tool.png" media="(max-width: 576px)">
+					<img src="./assets/images/desktop/tool.png" alt="Tool image" class="tool__image">
+				</picture>
+			</div>
+
+			<div class="tool--right">
+				<h2 class="tool__headline heading--3">Powerful tools.</h2>
+				<h2 class="tool__headline--secondary heading--3">More control.</h2>
+				<p class="tool__paragraph body--L">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
+					Ultrices nibh
+					sapien elit gravida ac, rutrum
+					molestie adipiscing lacinia.</p>
+
+				<div class="tool__list">
+					<div class="tool__item">
+						<img src="./assets/icons/check.svg" alt="Check icon" class="tool__item--icon">
+						<span class="tool__item--text body--L">Interdum volutpat turpis malesuada ac turpis.</span>
+					</div>
+					<div class="tool__item">
+						<img src="./assets/icons/check.svg" alt="Check icon" class="tool__item--icon">
+						<span class="tool__item--text body--L">Tortor ipsum pretium quis nunc.</span>
+					</div>
+					<div class="tool__item">
+						<img src="./assets/icons/check.svg" alt="Check icon" class="tool__item--icon">
+						<span class="tool__item--text body--L">Vitae odio a id purus in.</span>
+					</div>
+				</div>
+				<button class="button button--primary button--L tool__button">Start for free</button>
+			</div>
+		</section>
+
+		<!-- Manager section -->
+		<section class="manager container__inner">
+			<div class="manager--left">
+				<h2 class="manager__headline heading--3">Team management.</h2>
+				<h2 class="manager__headline--secondary heading--3">Effortless syncronization.</h2>
+				<p class="manager__paragraph body--L">Massa nunc nisi fames adipiscing scelerisque placerat et sagittis cursus.
+					Mi commodo id maecenas amet, elementum a, in.</p>
+
+				<div class="manager__list">
+					<div class="manager__item">
+						<img src="./assets/icons/check.svg" alt="Check icon" class="manager__item--icon">
+						<span class="manager__item--text body--L">Est et in pharetra magna adipiscing ornare aliquam.</span>
+					</div>
+					<div class="manager__item">
+						<img src="./assets/icons/check.svg" alt="Check icon" class="manager__item--icon">
+						<span class="manager__item--text body--L">Tellus arcu sed consequat ac velit ut eu blandit.</span>
+					</div>
+					<div class="manager__item">
+						<img src="./assets/icons/check.svg" alt="Check icon" class="manager__item--icon">
+						<span class="manager__item--text body--L">Ullamcorper ornare in et egestas dolor orci.</span>
+					</div>
+				</div>
+				<button class="button button--primary button--L tool__button">Start for free</button>
+			</div>
+
+			<div class="manager--right">
+				<picture>
+					<source srcset="./assets/images/mobile/manager.png" media="(max-width: 576px)">
+					<img src="./assets/images/desktop/manager.png" alt="Tool image" class="manager__image">
+				</picture>
+			</div>
+		</section>
+
+		<!-- Improvement section -->
+		<section class="improvement container__inner">
+			<div class="improvement__wrapper">
+				<div class="improvememt__left">
+					<h2 class="improvement__headline heading--5">Ultrices risus, sagittis, ullamcorper gravida aliquam auctor.
+					</h2>
+					<p class="improvement__paragraph body--L">Risus sit suscipit et nibh. Morbi pretium volutpat eget habitasse
+						habitant elementum dignissim arcu mauris. Ullamcorper
+						euismod id commodo mi nec. Sit egestas mauris imperdiet feugiat eros, sapien at pellentesque.</p>
+					<button class="button button--secondary button--L improvement__button">Request more info</button>
+				</div>
+				<div class="improvement__right">
+					<picture>
+						<source srcset="./assets/images/mobile/graph.png" media="(max-width: 576px)">
+						<img src="./assets/images/desktop/graph.png" alt="Graph image" class="improvement__image">
+					</picture>
+				</div>
+			</div>
+		</section>
+
+		<!-- Flow section -->
+		<section class="flow">
+			<div class="flow--left">
+				<h2 class="flow__headline heading--3">Control the flow.</h2>
+				<h2 class="flow__headline--secondary heading--3">Work faster.</h2>
+				<p class="flow__paragraph body--L">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
+					Ultrices nibh sapien elit gravida ac, rutrum
+					molestie adipiscing lacinia.</p>
+				<button class="button button--primary button--L tool__button">Start for free</button>
+			</div>
+
+			<div class="flow--right">
+				<picture>
+					<source srcset="./assets/images/mobile/flow.png" media="(max-width: 576px)">
+					<img src="./assets/images/desktop/flow.png" alt="Tool image" class="flow__image">
+				</picture>
+			</div>
+		</section>
+
+		<!-- Partners section -->
+		<section class="partners container__inner">
+			<h2 class="partners__headline heading--2">Our partners. Our Friends.</h2>
+			<h2 class="partners__headline--secondary heading--2">They love us.</h2>
+			<p class="partners__paragraph body--L">Sem malesuada sed lectus id nunc mattis est eget tincidunt.</p>
+
+			<div class="partners__cards">
+				<div class="partners__card">
+					<div class="partners__card--wrapper">
+						<div class="partners__card--company">
+							<img src="./assets/icons/zoomerr.svg" alt="Zoomerr Logo" class="partners__card--logo">
+							<span class="partners__card--company-name heading--6">Zoomerr</span>
+						</div>
+						<p class="partners__card--content body-XXL">
+							<span>Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+								tellus, viverra
+								turpis lorem. Varius a turpis urna id
+								porttitor.</span>
+						</p>
+						<div class="partners__card--user">
+							<img src="./assets/images/user-thumb-leader.png" alt="User Image">
+							<div class="partners__card--infos">
+								<span class="partners__card--name body--L">Hellen Jummy</span>
+								<span class="partners__card--position body--M">Team Lead</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="partners__card">
+					<div class="partners__card--wrapper">
+						<div class="partners__card--company">
+							<img src="./assets/icons/shells.svg" alt="Shells Logo" class="partners__card--logo">
+							<span class="partners__card--company-name heading--6">SHELLS</span>
+						</div>
+						<p class="partners__card--content body-XXL">
+							<span>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis
+								amet enim.
+								Sit purus venenatis velit semper lectus sed
+								ornare quam nulla. Lacus, ut congue sagittis vel nisi integer imperdiet a vitae.</span>
+						</p>
+						<div class="partners__card--user">
+							<img src="./assets/images/user-thumb-cofounder.png" alt="User Image">
+							<div class="partners__card--infos">
+								<span class="partners__card--name body--L">Hellena John</span>
+								<span class="partners__card--position body--M">Co-founder</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="partners__card">
+					<div class="partners__card--wrapper">
+						<div class="partners__card--company">
+							<img src="./assets/icons/art-venue.svg" alt="Art Venue Logo" class="partners__card--logo">
+							<span class="partners__card--company-name heading--6">ArtVenue</span>
+						</div>
+						<p class="partners__card--content body-XXL">
+							<span>A eget sed posuere dui risus habitasse mauris. Venenatis aliquet
+								id
+								ultrices a lacus. Pretium vehicula pretium posuere
+								justo sed lorem cursus.</span>
+						</p>
+						<div class="partners__card--user">
+							<img src="./assets/images/user-thumb-manager.png" alt="User Image">
+							<div class="partners__card--infos">
+								<span class="partners__card--name body--L">David Oshodi</span>
+								<span class="partners__card--position body--M">Manager</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="partners__slide">
+				<div class="partners__button">
+					<img src="./assets/icons/arrow-left.svg" alt="Arrow left icon">
+					<span class="partners__button--text button--M">Prev</span>
+				</div>
+				<div class="partners__button">
+					<span class="partners__button--text button--M">Next</span>
+					<img src="./assets/icons/arrow-right.svg" alt="Arrow left icon">
+				</div>
+			</div>
+		</section>
+
+		<!-- Team section -->
+		<section class="team container__inner">
+			<h2 class="team__headline heading--2">Your team. Your projects.</h2>
+			<h2 class="team__headline--secondary heading--2">Always together.</h2>
+			<p class="team__paragraph body--L">Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.</p>
+
+			<div class="team__actions">
+				<button class="button button--primary button--L"><span>Start for free</span></button>
+				<button class="button button--secondary button--L"><span>Request more info</span></button>
+			</div>
+		</section>
+
+	</div>
+	<!-- Footer -->
+	<footer class="footer container__inner">
+		<div class="footer__container container">
+			<div class="footer__columns">
+				<div class="footer__column">
+					<span class="footer__column--title subtitle--M">Categories</span>
+					<ul class="footer__column--list">
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">User Interface</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">User Experience</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Digital Media</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Lifestyle</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<span class="footer__column--title subtitle--M">Product</span>
+					<ul class="footer__column--list">
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Pricing</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Overview</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Browse</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Accessibility</a>
+							<button class="button footer__column--button body--XS">BETA</button>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<span class="footer__column--title subtitle--M">Solutions</span>
+					<ul class="footer__column--list">
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Brainstorming</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Ideation</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Wireframing</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Research</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<span class="footer__column--title subtitle--M">Resources</span>
+					<ul class="footer__column--list">
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Help Center</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Blog</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Tutorials</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">FAQs</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<span class="footer__column--title subtitle--M">Support</span>
+					<ul class="footer__column--list">
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Contact Us</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Developers</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Documentation</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Intergrations</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<span class="footer__column--title subtitle--M">Company</span>
+					<ul class="footer__column--list">
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">About</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Press</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Events</a>
+						</li>
+						<li class="footer__column--item">
+							<a href="javascript:void(0)" class="footer__column--link body--M">Request Demo</a>
+							<img class="footer__column--arrow" src="./assets/icons/arrow-right.svg" alt="Arrow right icon">
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="footer__bottom--left">
+					<ul class="footer__bottom--links">
+						<li><a class="body--M" href="javascript:void(0)">Trakor @ 2023</a></li>
+						<li><a class="body--M" href="javascript:void(0)">Terms of Service</a></li>
+						<li><a class="body--M" href="javascript:void(0)">Privacu Policy</a></li>
+						<li><a class="body--M" href="javascript:void(0)">Manage Cookies</a></li>
+					</ul>
+				</div>
+				<div class="footer__bottom--right">
+					<ul class="footer__bottom--social">
+						<li><a href="javascript:void(0)"><img src="./assets/icons/youtube.svg" alt="Twitter icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./assets/icons/facebook.svg" alt="Facebook icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./assets/icons/twitter.svg" alt="Twitter icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./assets/icons/instagram.svg" alt="Instagram icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./assets/icons/linkedin.svg" alt="Linkedin icon"></a></li>
+					</ul>
+					<ul class="footer__bottom--apps">
+						<li><a href="javascript:void(0)"><img src="./assets/images/app-store.png" alt="App Store icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./assets/images/google-play.png" alt="Google Play icon"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

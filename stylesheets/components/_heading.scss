@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+%heading {
+	line-height: 110%;
+}
+
+.heading--2 {
+	font-weight: 800;
+	@extend %heading;
+
+	@include clamp(24px, 56px);
+}
+
+.heading--3 {
+	font-weight: 800;
+	@extend %heading;
+
+	@include clamp(24px, 48px);
+}
+
+.heading--5 {
+	font-weight: 700;
+	@extend %heading;
+
+	@include clamp(18px, 32px);
+}
+
+.heading--6 {
+	font-weight: 700;
+	@extend %heading;
+
+	@include clamp(18px, 24px);
+}
+
+.heading--M {
+	font-weight: 800;
+	@extend %heading;
+
+	@include clamp(48px, 72px);
+}

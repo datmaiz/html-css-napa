@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.body--L {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 160%;
+
+	@include clamp(16px, 18px);
+}
+
+.body--M {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.body-XXL {
+	font-weight: 400;
+	line-height: 160%;
+
+	@include clamp(16px, 24px);
+}
+
+.body--XS {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 140%;
+}

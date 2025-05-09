@@ -1,0 +1,59 @@
+@mixin font($font-size, $font-weight: normal) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+
+@mixin flex-center($gap: 0) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@if $gap !=0 {
+		gap: $gap;
+	}
+}
+
+@mixin center-vertical($gap: 0) {
+	display: flex;
+	align-items: center;
+
+	@if $gap !=0 {
+		gap: $gap;
+	}
+}
+
+@mixin center-horizontal($gap: 0) {
+	display: flex;
+	justify-content: center;
+
+	@if $gap !=0 {
+		gap: $gap;
+	}
+}
+
+@mixin flex-between() {
+	display: flex;
+	justify-content: space-between;
+	@content;
+}
+
+@mixin clampText($line: 1) {
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+
+	@if $line !=0 {
+		-webkit-line-clamp: $line;
+	} @else {
+		-webkit-line-clamp: 1;
+	}
+}
+
+@mixin clamp($minFz, $maxFz) {
+	$slope: calc(($maxFz - $minFz) / (1440px - 320px));
+	$yAxisIntersection: calc(-320px * $slope + $minFz);
+	font-size: clamp($minFz, calc($yAxisIntersection + ($slope * 100vw)), $maxFz);
+}

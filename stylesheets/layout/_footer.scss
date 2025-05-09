@@ -1,0 +1,90 @@
+@use '../abstracts' as *;
+
+.footer {
+	background-color: $blueGray700;
+
+	&__columns {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(17.3rem, 1fr));
+		gap: 3.6rem;
+		padding-block: 4.8rem;
+	}
+
+	&__column {
+		&--title {
+			padding-block: 1.2rem;
+			display: inline-block;
+			color: $white;
+		}
+
+		&--list {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&--item {
+			padding-block: 1.2rem;
+			display: inline-flex;
+			align-items: center;
+
+			a {
+				color: $blueGray200;
+			}
+		}
+
+		&--button.button {
+			padding: 0.4rem 0.8rem;
+			color: $Indigo800;
+			margin-left: 0.8rem;
+		}
+
+		&--arrow {
+			margin-left: 0.8rem;
+		}
+	}
+
+	&__bottom {
+		@include center-vertical();
+		justify-content: space-between;
+		flex-wrap: wrap;
+		--padding-common: 2.4rem;
+
+		@include sm {
+			--padding-common: 1.6rem;
+		}
+
+		&--links {
+			@include center-vertical(3.2rem);
+			flex-wrap: wrap;
+
+			a {
+				padding-top: var(--padding-common);
+				color: $white;
+			}
+		}
+
+		&--right {
+			@include center-vertical(3.2rem);
+			flex-wrap: wrap;
+
+			@include sm {
+				gap: 0;
+			}
+		}
+
+		&--social {
+			@include center-vertical(1.6rem);
+			padding-block: var(--padding-common);
+		}
+
+		&--apps {
+			@include center-vertical(1.6rem);
+			padding-top: var(--padding-common);
+			padding-bottom: 2.4rem;
+
+			& > * {
+				flex-shrink: 0;
+			}
+		}
+	}
+}

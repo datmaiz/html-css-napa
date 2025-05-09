@@ -1,0 +1,53 @@
+@use '../../abstracts' as *;
+
+.improvement {
+	padding-block: 8rem;
+
+	@include lg {
+		padding-block: 6rem;
+	}
+
+	@include md {
+		padding-block: 2.4rem;
+	}
+
+	&__wrapper {
+		@include lg {
+			flex-direction: column;
+			gap: 3.2rem;
+			padding: 5.2rem 4.8rem;
+		}
+
+		@include md {
+			padding: 3.2rem 2.4rem;
+		}
+
+		@include sm {
+			padding: 2.4rem 1.6rem;
+		}
+
+		& > * {
+			flex: 1;
+		}
+
+		@include center-vertical();
+		justify-content: space-between;
+		border: 1px solid $blueGray600;
+		padding: 6.4rem;
+		padding-right: 0;
+		border-radius: 2rem;
+	}
+
+	&__headline {
+		padding-bottom: 3.2rem;
+	}
+
+	&__paragraph {
+		color: $blueGray300;
+		padding-bottom: 3.2rem;
+	}
+
+	&__button {
+		padding: 1.6rem 3.2rem;
+	}
+}

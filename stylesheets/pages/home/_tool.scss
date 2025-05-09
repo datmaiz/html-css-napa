@@ -1,0 +1,72 @@
+@use '../../abstracts' as *;
+
+.tool {
+	@include center-vertical(8rem);
+	justify-content: space-between;
+	padding-block: 8rem;
+
+	@include lg {
+		gap: 6rem;
+		padding-block: 6rem;
+	}
+
+	@include md {
+		flex-direction: column;
+		padding-block: 4.8rem;
+		gap: 3.2rem;
+	}
+
+	& > * {
+		flex: 1;
+	}
+
+	&--left {
+		animation-name: slideToRight;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+
+		animation-timeline: view();
+		animation-range-start: entry;
+		animation-range-end: calc(50vh);
+		@include md {
+			order: 1;
+		}
+	}
+
+	&--right {
+		animation-name: slideToLeft;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+
+		animation-timeline: view();
+
+		animation-range-start: entry;
+
+		/* Kết thúc khi phần tử đi đến giữa viewport */
+		animation-range-end: calc(50vh);
+	}
+
+	&__headline {
+		&--secondary {
+			color: $Indigo400;
+			padding-bottom: 3.2rem;
+		}
+	}
+
+	&__paragraph {
+		padding-bottom: 2.4rem;
+		color: $blueGray300;
+	}
+
+	&__list {
+		padding-bottom: 2.4rem;
+	}
+
+	&__item {
+		@include center-vertical(0.8rem);
+	}
+
+	&__button {
+		padding: 1.6rem 3.2rem;
+	}
+}

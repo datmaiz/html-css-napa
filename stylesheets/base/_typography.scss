@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $blueGray900;
+  color: $white;
+  font-size: 2rem;
+}

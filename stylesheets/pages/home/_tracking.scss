@@ -1,0 +1,65 @@
+@use '../../abstracts' as *;
+
+.tracking {
+	@include center-vertical;
+	flex-direction: column;
+	padding-block: 8rem;
+	text-align: center;
+
+	&__caption {
+		color: $Indigo400;
+	}
+
+	&__headline {
+		padding-top: 0.8rem;
+	}
+
+	&__paragraph {
+		padding-block: 3.2rem;
+		width: min(700px, 100%);
+		text-align: center;
+		color: $blueGray300;
+	}
+
+	&__actions {
+		@include center-vertical(1.6rem);
+		padding-bottom: 8rem;
+		width: 100%;
+		justify-content: center;
+
+		@include sm {
+			gap: 1.2rem;
+		}
+
+		&--button {
+			width: 25.6rem;
+			padding: 1.6rem;
+			justify-content: center;
+
+			@include sm {
+				width: auto;
+				flex: 1;
+				padding: 1.6rem 1.2rem;
+			}
+
+			span {
+				@include clampText(1);
+			}
+		}
+	}
+
+	&__image {
+		animation-name: rotate;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+
+		/* Gắn animation với view progress timeline */
+		animation-timeline: view();
+
+		/* Bắt đầu khi phần tử vào viewport */
+		animation-range-start: entry + 50vh;
+
+		/* Kết thúc khi phần tử đi đến giữa viewport */
+		animation-range-end: exit;
+	}
+}

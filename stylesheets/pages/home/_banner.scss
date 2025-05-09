@@ -1,0 +1,52 @@
+@use '../../abstracts' as *;
+
+.banner {
+	background: linear-gradient(to bottom, $Indigo600 0 45%, $blueGray900 45% 100%);
+	padding-block: 8rem;
+
+	@include lg {
+		padding-block: 6rem;
+	}
+
+	@include md {
+		padding-block: 4.8rem;
+	}
+
+	&__headline {
+		font-weight: 800;
+		line-height: 110%;
+		text-align: center;
+
+		@include clamp(24px, 48px);
+	}
+
+	&__image {
+		padding-top: 8rem;
+		margin-inline: auto;
+
+		animation-name: slideToTop;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+
+		/* Gắn animation với view progress timeline */
+		animation-timeline: view();
+
+		/* Bắt đầu khi phần tử vào viewport */
+		animation-range-start: entry;
+
+		/* Kết thúc khi phần tử đi đến giữa viewport */
+		animation-range-end: calc(50vh);
+
+		img {
+			width: 100%;
+		}
+
+		@include lg {
+			padding-top: 4rem;
+		}
+
+		@include md {
+			padding-top: 4.8rem;
+		}
+	}
+}

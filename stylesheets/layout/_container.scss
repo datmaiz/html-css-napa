@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin-inline: auto;
+
+	// responsive
+	@include lg {
+	}
+
+	&__inner {
+		padding-inline: 8rem;
+
+		// responsive
+		@include lg {
+			padding-inline: 4rem;
+		}
+
+		@include sm {
+			padding-inline: 2rem;
+		}
+
+		@include xs {
+			padding-inline: 1.6rem;
+		}
+	}
+}

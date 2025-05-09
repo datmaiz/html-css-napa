@@ -1,0 +1,154 @@
+@use '../../abstracts' as *;
+
+.partners {
+	text-align: center;
+	padding-block: 8rem;
+
+	@include lg {
+		padding-block: 6rem;
+	}
+
+	@include md {
+		padding-block: 4.8rem;
+	}
+
+	&__headline {
+		padding-bottom: 0.8rem;
+	}
+
+	&__headline--secondary {
+		color: $Indigo400;
+		padding-bottom: 2.4rem;
+	}
+
+	&__cards {
+		@include center-horizontal(2.4rem);
+		padding-block: 8rem;
+
+		@include lg {
+			gap: 1.6rem;
+			padding-bottom: 0;
+			padding-top: 4rem;
+		}
+
+		@include md {
+			padding-top: 3.2rem;
+		}
+	}
+
+	&__card {
+		max-width: 38.4rem;
+		width: 100%;
+		display: grid;
+		padding-block: 2rem;
+
+		animation-name: slideToTop;
+		animation-duration: 1s;
+
+		animation-timeline: view();
+		animation-range-start: entry;
+		animation-range-end: calc(50vh);
+
+		&:first-child {
+			animation-name: slideToRight;
+			animation-duration: 1s;
+
+			animation-timeline: view();
+			animation-range-start: entry;
+			animation-range-end: calc(50vh);
+		}
+
+		&:last-child {
+			animation-name: slideToLeft;
+			animation-duration: 1s;
+
+			animation-timeline: view();
+			animation-range-start: entry;
+			animation-range-end: calc(50vh);
+		}
+
+		&:first-child,
+		&:last-child {
+			transform: scaleY(0.94);
+
+			@include lg {
+				display: none;
+			}
+		}
+
+		&--wrapper {
+			background-color: $blueGray700;
+			padding: 3.2rem;
+			border-radius: 2rem;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			@include lg {
+				padding: 2.8rem;
+			}
+
+			@include md {
+				padding: 1.6rem;
+			}
+		}
+
+		&--company {
+			@include center-vertical(0.8rem);
+
+			&-name {
+				color: $blueGray400;
+			}
+		}
+
+		&--content {
+			padding-block: 3.2rem;
+			text-align: left;
+
+			span {
+				@include clampText(7);
+			}
+		}
+
+		&--user {
+			@include center-vertical(1.6rem);
+
+			img {
+				width: 6.4rem;
+				height: 6.4rem;
+				border-radius: 999rem;
+			}
+		}
+
+		&--infos {
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+			justify-content: start;
+		}
+
+		&--name {
+			text-align: left;
+		}
+
+		&--position {
+			color: $blueGray400;
+			text-align: left;
+		}
+	}
+
+	&__slide {
+		@include center-vertical(3.2rem);
+		justify-content: center;
+
+		@include lg {
+			display: none;
+		}
+	}
+
+	&__button {
+		@include center-vertical(1.6rem);
+		cursor: pointer;
+	}
+}

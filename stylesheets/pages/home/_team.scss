@@ -1,0 +1,50 @@
+@use '../../abstracts' as *;
+
+.team {
+	padding-block: 8rem;
+
+	@include lg {
+		padding-block: 6rem;
+	}
+
+	@include md {
+		padding-block: 4.8rem;
+	}
+
+	&__headline {
+		text-align: center;
+
+		&--secondary {
+			text-align: center;
+			color: $Indigo400;
+			padding-top: 0.8rem;
+		}
+	}
+
+	&__paragraph {
+		text-align: center;
+		padding-top: 3.2rem;
+		color: $blueGray300;
+	}
+
+	&__actions {
+		@include center-horizontal(2.4rem);
+		align-items: center;
+		padding-top: 3.2rem;
+		padding-bottom: 8rem;
+
+		@include md {
+			gap: 1.6rem;
+		}
+
+		button {
+			width: 25.6rem;
+			justify-content: center;
+			padding: 1.6rem;
+
+			span {
+				@include clampText(1);
+			}
+		}
+	}
+}

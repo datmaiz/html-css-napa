@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.button--M {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+}
+
+.button--L {
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+
+	@include clamp(16px, 20px);
+}
+
+.button {
+	color: $white;
+	border-style: none;
+	border-radius: 0.8rem;
+	font-family: $primary-font;
+	transition: 0.3s linear;
+	display: inline-flex;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+}
+
+.button--primary {
+	background-color: $Indigo500;
+}
+
+.button--secondary {
+	background-color: $blueGray700;
+}
