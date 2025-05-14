@@ -6,6 +6,10 @@
 	justify-content: space-between;
 	position: relative;
 
+	@include md {
+		padding-block: 1.6rem;
+	}
+
 	&__logo {
 		font-size: 3.2rem;
 		font-weight: 700;
@@ -46,7 +50,7 @@
 		}
 
 		// responsive
-		@include xxl {
+		@include lg {
 			.button--request {
 				display: none;
 			}

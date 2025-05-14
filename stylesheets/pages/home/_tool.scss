@@ -64,6 +64,7 @@
 
 	&__item {
 		@include center-vertical(0.8rem);
+		align-items: start;
 	}
 
 	&__button {

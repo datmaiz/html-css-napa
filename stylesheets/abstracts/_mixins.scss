@@ -53,7 +53,7 @@
 }
 
 @mixin clamp($minFz, $maxFz) {
-	$slope: calc(($maxFz - $minFz) / (1440px - 320px));
-	$yAxisIntersection: calc(-320px * $slope + $minFz);
+	$slope: calc(($maxFz - $minFz) / (1440px - 393px));
+	$yAxisIntersection: calc(-393px * $slope + $minFz);
 	font-size: clamp($minFz, calc($yAxisIntersection + ($slope * 100vw)), $maxFz);
 }

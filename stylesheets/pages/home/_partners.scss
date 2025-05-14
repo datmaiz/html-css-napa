@@ -33,6 +33,7 @@
 
 		@include md {
 			padding-top: 3.2rem;
+			padding-inline: 2.25rem;
 		}
 	}
 
@@ -40,7 +41,7 @@
 		max-width: 38.4rem;
 		width: 100%;
 		display: grid;
-		padding-block: 2rem;
+		// padding-block: 2rem;
 
 		animation-name: slideToTop;
 		animation-duration: 1s;
@@ -69,7 +70,8 @@
 
 		&:first-child,
 		&:last-child {
-			transform: scaleY(0.94);
+			// transform: scaleY(0.94);
+			padding-block: 1.9rem;
 
 			@include lg {
 				display: none;

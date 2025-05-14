@@ -6,6 +6,10 @@
 	padding-block: 8rem;
 	text-align: center;
 
+	@include md {
+		padding-block: 4.8rem;
+	}
+
 	&__caption {
 		color: $Indigo400;
 	}
@@ -26,6 +30,14 @@
 		padding-bottom: 8rem;
 		width: 100%;
 		justify-content: center;
+
+		@include lg {
+			padding-bottom: 6rem;
+		}
+
+		@include md {
+			padding-bottom: 4.8rem;
+		}
 
 		@include sm {
 			gap: 1.2rem;

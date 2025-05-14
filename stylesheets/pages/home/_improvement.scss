@@ -23,7 +23,7 @@
 		}
 
 		@include sm {
-			padding: 2.4rem 1.6rem;
+			padding: 2.4rem 1.6rem 0 1.6rem;
 		}
 
 		& > * {
@@ -49,5 +49,11 @@
 
 	&__button {
 		padding: 1.6rem 3.2rem;
+	}
+
+	&--right {
+		@include sm {
+			margin-inline: -1.6rem;
+		}
 	}
 }

@@ -8,6 +8,10 @@
 		grid-template-columns: repeat(auto-fit, minmax(17.3rem, 1fr));
 		gap: 3.6rem;
 		padding-block: 4.8rem;
+
+		@include sm {
+			gap: 3.2rem;
+		}
 	}
 
 	&__column {
@@ -51,6 +55,7 @@
 
 		@include sm {
 			--padding-common: 1.6rem;
+			padding-top: 2.4rem;
 		}
 
 		&--links {
@@ -60,6 +65,21 @@
 			a {
 				padding-top: var(--padding-common);
 				color: $white;
+				display: inline-block;
+				@include clamp(14px, 16px);
+			}
+
+			@include sm {
+				gap: 1.6rem;
+			}
+		}
+
+		&--menus {
+			@include center-vertical(3.2rem);
+			flex-wrap: wrap;
+
+			@include sm {
+				gap: 2.4rem;
 			}
 		}
 
